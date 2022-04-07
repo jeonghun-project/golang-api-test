@@ -20,6 +20,8 @@ func init() {
 
 	Port = os.Getenv("PORT")
 
+	ServerType = os.Getenv("TYPE")
+
 	if Port == "" {
 		if ServerType == Dev {
 			Port = "4000"
